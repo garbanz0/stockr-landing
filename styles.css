@@ -54,6 +54,7 @@
    Base
    ============================================================ */
 *, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 body {
   margin: 0;
@@ -571,27 +572,132 @@ p { margin: 0; }
 }
 .waitlist-card .lead { color: rgba(255,255,255,0.86); margin: 0 auto 28px; max-width: 520px; }
 
-.embed-slot {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px dashed rgba(255, 255, 255, 0.35);
-  border-radius: var(--r-card);
-  padding: 18px;
-  max-width: 520px;
+.waitlist-form {
+  max-width: 480px;
   margin: 0 auto;
+  display: grid;
+  gap: 12px;
 }
-.embed-placeholder {
-  color: rgba(255, 255, 255, 0.78);
+.form-input {
+  width: 100%;
+  padding: 16px 18px;
+  border-radius: var(--r-input);
+  border: 1px solid transparent;
+  background: #fff;
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--ink);
+  line-height: 1.3;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+  transition: box-shadow .15s ease, border-color .15s ease;
+}
+.form-input::placeholder { color: #8a90a0; }
+.form-input:focus-visible {
+  outline: none;
+  border-color: #fff;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.45), 0 1px 2px rgba(0, 0, 0, 0.12);
+}
+.form-input:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.form-submit {
+  margin-top: 4px;
+  width: 100%;
+  position: relative;
+}
+.form-submit:disabled { opacity: 0.85; cursor: progress; }
+.form-submit-spinner {
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  border: 2.5px solid rgba(29, 63, 214, 0.25);
+  border-top-color: var(--blue);
+  display: inline-block;
+  margin-left: 10px;
+  animation: spin 0.7s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.form-error {
+  color: #ffd9d6;
+  background: rgba(213, 68, 57, 0.32);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--r-input);
+  padding: 10px 14px;
   font-size: 14px;
-  line-height: 1.5;
-  margin: 0;
+  margin: 4px 0 0;
 }
-.embed-placeholder code {
+
+.waitlist-success {
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+.success-tick {
+  width: 64px;
+  height: 64px;
+  border-radius: 999px;
   background: rgba(255, 255, 255, 0.18);
   color: #fff;
-  padding: 1px 6px;
-  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
 }
+.success-tick svg { width: 32px; height: 32px; }
+.success-h {
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: clamp(28px, 4.5vw, 36px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+}
+.success-line {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 17px;
+  margin: 0;
+}
+.success-line strong {
+  color: #fff;
+  font-weight: 700;
+  font-family: var(--font-mono);
+}
+.referral {
+  margin-top: 22px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--r-card);
+  padding: 16px;
+}
+.referral-label {
+  margin: 0 0 10px;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 14px;
+}
+.referral-row {
+  display: flex;
+  gap: 8px;
+  align-items: stretch;
+}
+.referral-row .referral-link { flex: 1; font-size: 14px; padding: 12px 14px; }
+.referral-row .referral-copy {
+  padding: 12px 18px;
+  font-size: 14px;
+}
+
 .waitlist-card .fineprint { color: rgba(255,255,255,0.6); margin-top: 18px; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 
 @media (min-width: 720px) {
   .waitlist-card { padding: 64px 56px; }

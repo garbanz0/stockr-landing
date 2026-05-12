@@ -335,15 +335,54 @@
           Stockr is launching this week. Join the waitlist for early access and founder pricing — built for independent hospitality teams.
         </p>
 
-        <!-- Drop your Waitlister embed inside this div. -->
-        <div id="waitlister-embed" class="embed-slot">
-          <!-- BEGIN Waitlister embed -->
-          <!-- Replace this comment block with the script Waitlister gives you. -->
-          <p class="embed-placeholder">
-            Drop your Waitlister embed code in <code>index.html</code> inside the
-            <code>#waitlister-embed</code> div.
+        <form id="waitlist-form" class="waitlist-form" novalidate>
+          <div class="form-row">
+            <label for="wl-email" class="sr-only">Email</label>
+            <input
+              type="email"
+              id="wl-email"
+              name="email"
+              required
+              autocomplete="email"
+              placeholder="you@yourcafe.com"
+              class="form-input"
+            />
+          </div>
+          <div class="form-row">
+            <label for="wl-business" class="sr-only">Business name</label>
+            <input
+              type="text"
+              id="wl-business"
+              name="business_name"
+              autocomplete="organization"
+              placeholder="Your café, bar or restaurant (optional)"
+              class="form-input"
+            />
+          </div>
+          <button type="submit" class="btn btn-white btn-lg form-submit">
+            <span class="form-submit-label">Join the waitlist</span>
+            <span class="form-submit-spinner" hidden aria-hidden="true"></span>
+          </button>
+          <p class="form-error" hidden role="alert"></p>
+        </form>
+
+        <div id="waitlist-success" class="waitlist-success" hidden>
+          <div class="success-tick" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12l5 5L20 7" />
+            </svg>
+          </div>
+          <h3 class="success-h">You're on the list.</h3>
+          <p class="success-line">
+            You're <strong>#<span class="success-position">—</span></strong> in line. We'll email when Stockr opens.
           </p>
-          <!-- END Waitlister embed -->
+          <div class="referral" hidden>
+            <p class="referral-label">Move up the list — share your link:</p>
+            <div class="referral-row">
+              <input class="referral-link form-input" readonly />
+              <button type="button" class="btn btn-white referral-copy">Copy</button>
+            </div>
+          </div>
         </div>
 
         <p class="fineprint">No spam. We'll only email when there's something to say.</p>
