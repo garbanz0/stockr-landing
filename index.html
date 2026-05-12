@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#1D3FD6" />
+<title>Stockr — Hospitality Operations App</title>
+<meta name="description" content="Stockr is a mobile operations workspace for hospitality teams. Keep stock counts, opening and closing tasks, receipts, SOPs, timekeeping, and food diary records in one place. No chasing. No guessing." />
+
+<meta property="og:title" content="Stockr | No chasing. No guessing." />
+<meta property="og:description" content="A calm mobile operations workspace for cafés, bars, restaurants, bakeries and food trucks." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="assets/icon.png" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Stockr | No chasing. No guessing." />
+<meta name="twitter:description" content="A calm mobile operations workspace for hospitality teams." />
+
+<link rel="icon" type="image/png" href="assets/icon.png" />
+<link rel="apple-touch-icon" href="assets/icon.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Inter+Tight:wght@500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" />
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="#top" aria-label="Stockr home">
+      <img class="nav-icon" src="assets/icon.png" alt="" width="32" height="32" />
+      <span class="nav-wordmark">Stockr</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#features">Features</a>
+      <a href="#workflow">Workflow</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-primary nav-cta" href="#waitlist">Join the waitlist</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">For cafés · bars · restaurants · bakeries · food trucks</p>
+        <h1>No chasing.<br />No guessing.</h1>
+        <p class="lead">
+          Stockr is a mobile operations workspace for hospitality teams.
+          Keep stock, opening and closing tasks, receipts, SOPs, timekeeping
+          and food diary records in one place.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary btn-lg" href="#waitlist">Join the waitlist</a>
+          <a class="btn btn-ghost btn-lg" href="#features">See what's inside</a>
+        </div>
+        <p class="proof-line">
+          <span class="dot"></span> Launching this week · early access for waitlist members
+        </p>
+      </div>
+      <div class="hero-visual">
+        <div class="phone phone-hero">
+          <div class="phone-screen">
+            <img src="assets/screens/home.png" alt="Stockr Home screen showing daily updates, events, and clock-in status" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem strip -->
+  <section class="problem">
+    <div class="container narrow">
+      <p class="eyebrow eyebrow-blue">The shift problem</p>
+      <h2 class="section-h">Your team isn't disorganised. They're working across four tools.</h2>
+      <ul class="problem-list">
+        <li><span>Stock counts in chat.</span></li>
+        <li><span>Receipts in the camera roll.</span></li>
+        <li><span>Tasks on paper.</span></li>
+        <li><span>Handovers from memory.</span></li>
+      </ul>
+      <p class="lead muted">Stockr puts all of it in one mobile workspace built for the shift, not for a desk.</p>
+    </div>
+  </section>
+
+  <!-- Features grid -->
+  <section id="features" class="features">
+    <div class="container">
+      <header class="section-head">
+        <p class="eyebrow eyebrow-blue">What's inside</p>
+        <h2 class="section-h">Everything you need to run the shift.</h2>
+        <p class="lead muted">Built around the work hospitality teams already do — just faster, shared, and recorded.</p>
+      </header>
+      <div class="feature-grid">
+        <article class="feature">
+          <span class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 12l9 4 9-4"/><path d="M3 17l9 4 9-4"/></svg>
+          </span>
+          <h3>Stock</h3>
+          <p>Live counts from the floor. Suppliers, categories, freshness, and projections in one place.</p>
+        </article>
+        <article class="feature">
+          <span class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M9 3v4"/><path d="M15 3v4"/><path d="M8 13l3 3 5-5"/></svg>
+          </span>
+          <h3>Opening & closing</h3>
+          <p>Shared checklists for every shift. Photo-proof tasks. Templates managers actually maintain.</p>
+        </article>
+        <article class="feature">
+          <span class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2V3z"/><path d="M9 8h6"/><path d="M9 12h6"/><path d="M9 16h4"/></svg>
+          </span>
+          <h3>Receipts</h3>
+          <p>Capture, review, filter, export. Stockr reads amounts, VAT, dates and categories from the photo.</p>
+        </article>
+        <article class="feature">
+          <span class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h12a3 3 0 013 3v13H7a3 3 0 01-3-3V4z"/><path d="M4 17h12"/><path d="M9 8h6"/><path d="M9 12h6"/></svg>
+          </span>
+          <h3>SOPs</h3>
+          <p>Every procedure searchable on the phone in your team's pocket — opening, closing, safety, training.</p>
+        </article>
+        <article class="feature">
+          <span class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          </span>
+          <h3>Timekeeping</h3>
+          <p>One-tap clock-in with geofence. Team activity, lateness, hours — visible to managers in real time.</p>
+        </article>
+        <article class="feature">
+          <span class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3h4v3a2 2 0 002 2h0a2 2 0 012 2v9a3 3 0 01-3 3H9a3 3 0 01-3-3v-9a2 2 0 012-2h0a2 2 0 002-2V3z"/><path d="M9 14h6"/><path d="M9 18h4"/></svg>
+          </span>
+          <h3>Food diary</h3>
+          <p>Daily sign-off, temperature checks, display records, and Prove It evidence. Export when inspected.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workflow alternating sections -->
+  <section id="workflow" class="workflow">
+    <div class="container">
+      <header class="section-head section-head-center">
+        <p class="eyebrow eyebrow-blue">Inside the app</p>
+        <h2 class="section-h">Run the shift from one calm workspace.</h2>
+      </header>
+
+      <div class="workflow-row">
+        <div class="workflow-text">
+          <p class="eyebrow eyebrow-blue">Home</p>
+          <h3 class="row-h">Everyone starts on the same page.</h3>
+          <p>Daily updates, priority notes, today's events, and the team's clock-in status. The first thing anyone sees when they open the app.</p>
+          <ul class="bullet-list">
+            <li>Priority labels for service-critical updates</li>
+            <li>Calendar and event view</li>
+            <li>One-tap shortcut to clock in</li>
+          </ul>
+        </div>
+        <div class="workflow-visual">
+          <div class="phone">
+            <div class="phone-screen">
+              <img src="assets/screens/home.png" alt="Stockr Home screen with daily updates and clock-in" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="workflow-row reverse">
+        <div class="workflow-text">
+          <p class="eyebrow eyebrow-blue">Opening & closing</p>
+          <h3 class="row-h">Same list. Same expectations. Every shift.</h3>
+          <p>Templates managers maintain. Staff tick off as they go. Photo-proof tasks for the ones that matter most.</p>
+          <ul class="bullet-list">
+            <li>Live progress for opening and closing</li>
+            <li>Photo proof for safety-critical tasks</li>
+            <li>Names and times against every completed step</li>
+          </ul>
+        </div>
+        <div class="workflow-visual">
+          <div class="phone">
+            <div class="phone-screen">
+              <img src="assets/screens/checklist.png" alt="Opening and closing checklist screen" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="workflow-row">
+        <div class="workflow-text">
+          <p class="eyebrow eyebrow-blue">Stock</p>
+          <h3 class="row-h">Know what's low before service does.</h3>
+          <p>Counts from the floor. Categories, suppliers, freshness. Projections based on the last seven days, so you order what you'll actually use.</p>
+          <ul class="bullet-list">
+            <li>Healthy / Low / Out status at a glance</li>
+            <li>Coverage and days-left projections</li>
+            <li>Filter by category and supplier</li>
+          </ul>
+        </div>
+        <div class="workflow-visual">
+          <div class="phone">
+            <div class="phone-screen">
+              <img src="assets/screens/stock.png" alt="Stock overview with low stock highlighted" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="workflow-row reverse">
+        <div class="workflow-text">
+          <p class="eyebrow eyebrow-blue">Receipts</p>
+          <h3 class="row-h">Capture once. Review later. Export when asked.</h3>
+          <p>Staff take a photo or upload one. Stockr reads the details. Owners review on their phone between services and export when the accountant calls.</p>
+          <ul class="bullet-list">
+            <li>Amount, VAT, date and category captured automatically</li>
+            <li>Spend across last 7 and 30 days</li>
+            <li>Filter, approve, reject and export</li>
+          </ul>
+        </div>
+        <div class="workflow-visual">
+          <div class="phone">
+            <div class="phone-screen">
+              <img src="assets/screens/receipts.png" alt="Receipt queue with capture and spending breakdown" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="workflow-row">
+        <div class="workflow-text">
+          <p class="eyebrow eyebrow-blue">Food diary</p>
+          <h3 class="row-h">Records that close themselves.</h3>
+          <p>SFBB-style daily sign-off. Temperature checks. Display decisions. Prove It evidence for safe methods like cleaning, allergens, and probe calibration.</p>
+          <ul class="bullet-list">
+            <li>Daily, Temp, Display and Prove It tabs</li>
+            <li>Reference notes for inspection records</li>
+            <li>Export when you need to share with EHO</li>
+          </ul>
+        </div>
+        <div class="workflow-visual">
+          <div class="phone">
+            <div class="phone-screen">
+              <img src="assets/screens/food-diary.png" alt="Food diary calendar showing daily signs" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="workflow-row reverse">
+        <div class="workflow-text">
+          <p class="eyebrow eyebrow-blue">Timekeeping</p>
+          <h3 class="row-h">Clock-ins you can actually trust.</h3>
+          <p>One clock-in per day, with location checked against the venue. Live team activity, lateness, and hours — visible to managers, on the same phone.</p>
+          <ul class="bullet-list">
+            <li>Geofenced clock-in (set your radius)</li>
+            <li>On-time and late status with the activity feed</li>
+            <li>Shift schedule rota for the month</li>
+          </ul>
+        </div>
+        <div class="workflow-visual">
+          <div class="phone">
+            <div class="phone-screen">
+              <img src="assets/screens/timekeeping.png" alt="Timekeeping screen with geofenced clock-in" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="workflow-row">
+        <div class="workflow-text">
+          <p class="eyebrow eyebrow-blue">Operations setup</p>
+          <h3 class="row-h">Set up once. Keep improving.</h3>
+          <p>Stock categories, suppliers, checklist templates, SOP categories, shift labels and food diary equipment — all configured from one place. AI Import drafts your first list.</p>
+          <ul class="bullet-list">
+            <li>Import with AI for fast onboarding</li>
+            <li>One configuration shared by the team</li>
+            <li>Edit and expand as the venue changes</li>
+          </ul>
+        </div>
+        <div class="workflow-visual">
+          <div class="phone">
+            <div class="phone-screen">
+              <img src="assets/screens/profile.png" alt="Profile and operations setup screen" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Role split -->
+  <section class="roles">
+    <div class="container">
+      <header class="section-head section-head-center">
+        <p class="eyebrow eyebrow-blue">Built for the team</p>
+        <h2 class="section-h">Two roles. One workspace.</h2>
+      </header>
+      <div class="role-grid">
+        <article class="role-card">
+          <h3>For owners & managers</h3>
+          <ul class="check-list">
+            <li>One mobile view of stock, tasks, receipts and records</li>
+            <li>Approve receipts and item requests between services</li>
+            <li>Maintain SOPs, templates and operations setup</li>
+            <li>Export records when the accountant or inspector asks</li>
+          </ul>
+        </article>
+        <article class="role-card">
+          <h3>For staff</h3>
+          <ul class="check-list">
+            <li>One place to check today's shift</li>
+            <li>Submit stock counts from the floor</li>
+            <li>Tick off opening and closing as they go</li>
+            <li>Photograph receipts, log temps, request items</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Waitlist CTA -->
+  <section id="waitlist" class="waitlist">
+    <div class="container narrow">
+      <div class="waitlist-card">
+        <img class="waitlist-icon" src="assets/icon.png" alt="Stockr app icon" width="88" height="88" />
+        <p class="eyebrow eyebrow-onblue">Join the waitlist</p>
+        <h2 class="big-h">Be first in line.</h2>
+        <p class="lead on-blue">
+          Stockr is launching this week. Join the waitlist for early access and founder pricing — built for independent hospitality teams.
+        </p>
+
+        <!-- Drop your Waitlister embed inside this div. -->
+        <div id="waitlister-embed" class="embed-slot">
+          <!-- BEGIN Waitlister embed -->
+          <!-- Replace this comment block with the script Waitlister gives you. -->
+          <p class="embed-placeholder">
+            Drop your Waitlister embed code in <code>index.html</code> inside the
+            <code>#waitlister-embed</code> div.
+          </p>
+          <!-- END Waitlister embed -->
+        </div>
+
+        <p class="fineprint">No spam. We'll only email when there's something to say.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="faq">
+    <div class="container narrow">
+      <header class="section-head">
+        <p class="eyebrow eyebrow-blue">FAQ</p>
+        <h2 class="section-h">A few quick answers.</h2>
+      </header>
+      <div class="faq-list">
+        <details>
+          <summary>Who is Stockr for?</summary>
+          <p>Independent cafés, bakeries, restaurants, bars, food trucks and small hospitality groups. Owners and managers who are still close to daily operations and want their team to stay organised during service.</p>
+        </details>
+        <details>
+          <summary>When is Stockr launching?</summary>
+          <p>This week. Joining the waitlist gets you early access ahead of the public launch, plus founder pricing for waitlist members.</p>
+        </details>
+        <details>
+          <summary>What platforms is Stockr on?</summary>
+          <p>Stockr is mobile-first. We're launching on iPhone first, with Android to follow. The app is designed to be used on the floor, not at a desk.</p>
+        </details>
+        <details>
+          <summary>How long does setup take?</summary>
+          <p>Around 90 seconds with AI Import — describe your business and Stockr drafts your stock list, opening and closing tasks, and SOPs for you to review. Setting it all up manually takes about 5 minutes.</p>
+        </details>
+        <details>
+          <summary>Can my whole team use it?</summary>
+          <p>Yes. Owners and managers get an admin view to maintain templates, approve receipts, and review records. Staff get a focused day-to-day view — stock, tasks, requests, receipts and timekeeping.</p>
+        </details>
+        <details>
+          <summary>What about food safety records?</summary>
+          <p>Stockr's food diary follows SFBB-style daily sign-off, temperature checks, display records and Prove It evidence. Records can be exported for inspections.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing CTA -->
+  <section class="closing-cta">
+    <div class="container narrow center">
+      <h2 class="big-h">No chasing. No guessing.</h2>
+      <p class="lead muted">Get Stockr in your team's hands as soon as it's live.</p>
+      <a class="btn btn-primary btn-lg" href="#waitlist">Join the waitlist</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="nav-brand" href="#top" aria-label="Stockr home">
+          <img class="nav-icon" src="assets/icon.png" alt="" width="32" height="32" />
+          <span class="nav-wordmark">Stockr</span>
+        </a>
+        <p class="tagline">No chasing. No guessing.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Product</h4>
+        <a href="#features">Features</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="footer-links">
+        <h4>Company</h4>
+        <a href="mailto:hello@stockr.app">Contact</a>
+        <a href="#waitlist">Waitlist</a>
+      </div>
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+    <p class="footer-meta">&copy; <span id="year">2026</span> Stockr. Built for the shift.</p>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
