@@ -576,7 +576,23 @@ p { margin: 0; }
   max-width: 480px;
   margin: 0 auto;
   display: grid;
-  gap: 12px;
+  gap: 14px;
+  text-align: left;
+}
+.form-row { display: grid; gap: 6px; }
+.form-label {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.92);
+  letter-spacing: -0.005em;
+  margin: 0;
+}
+.form-label-meta {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6);
+  margin-left: 4px;
 }
 .form-input {
   width: 100%;

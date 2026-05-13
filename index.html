@@ -337,7 +337,7 @@
 
         <form id="waitlist-form" class="waitlist-form" novalidate>
           <div class="form-row">
-            <label for="wl-email" class="sr-only">Email</label>
+            <label for="wl-email" class="form-label">Email</label>
             <input
               type="email"
               id="wl-email"
@@ -349,13 +349,15 @@
             />
           </div>
           <div class="form-row">
-            <label for="wl-business" class="sr-only">Business name</label>
+            <label for="wl-business" class="form-label">
+              Business name <span class="form-label-meta">(optional)</span>
+            </label>
             <input
               type="text"
               id="wl-business"
               name="business_name"
               autocomplete="organization"
-              placeholder="Your café, bar or restaurant (optional)"
+              placeholder="Your café, bar or restaurant"
               class="form-input"
             />
           </div>
