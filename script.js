@@ -4,7 +4,7 @@
 // Paste your waitlist key from waitlister.me dashboard → Overview.
 // IMPORTANT: also whitelist `getstockr.co.uk` (and `www.getstockr.co.uk`) in
 // Waitlister → Settings → Domains, or submissions will be rejected.
-const WAITLIST_KEY = "YOUR-WAITLIST-KEY";
+const WAITLIST_KEY = "FckiLOJoD9HS";
 
 (function initWaitlistForm() {
   const form = document.getElementById("waitlist-form");
