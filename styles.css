@@ -572,6 +572,40 @@ p { margin: 0; }
 }
 .waitlist-card .lead { color: rgba(255,255,255,0.86); margin: 0 auto 28px; max-width: 520px; }
 
+/* App Store download button — Apple-guideline-compliant black badge */
+.download-actions {
+  display: flex;
+  justify-content: center;
+  margin: 4px 0 18px;
+}
+.appstore-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #000;
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
+  border: 1px solid rgba(255,255,255,0.18);
+  min-height: 60px;
+}
+.appstore-badge:hover { background: #111; transform: translateY(-1px); box-shadow: 0 8px 20px rgba(0,0,0,0.35); }
+.appstore-badge:active { transform: translateY(0); }
+.appstore-apple { width: 28px; height: 28px; color: #fff; flex: 0 0 auto; }
+.appstore-text { display: inline-flex; flex-direction: column; line-height: 1; text-align: left; }
+.appstore-small { font-size: 11px; letter-spacing: 0.02em; opacity: 0.92; margin-bottom: 3px; }
+.appstore-large {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: -0.01em;
+}
+@media (min-width: 640px) {
+  .appstore-large { font-size: 24px; }
+}
+
 .waitlist-form {
   max-width: 480px;
   margin: 0 auto;
